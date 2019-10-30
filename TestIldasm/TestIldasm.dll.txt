@@ -45,12 +45,33 @@
   .ver 1:0:0:0
 }
 .module TestIldasm.dll
-// MVID: {01604077-D8BB-47C0-883A-BF41FC2B44E6}
+// MVID: {2A6F5BB0-EEDE-4F2F-81ED-D7F0AA0DF232}
 .imagebase 0x10000000
 .file alignment 0x00000200
 .stackreserve 0x00100000
 .subsystem 0x0003       // WINDOWS_CUI
 .corflags 0x00000001    //  ILONLY
-// Image base: 0x03040000
+// Image base: 0x02C90000
+
+
+// =============== CLASS MEMBERS DECLARATION ===================
+
+.class public auto ansi beforefieldinit TestIldasm.Class1
+       extends [mscorlib]System.Object
+{
+  .method public hidebysig specialname rtspecialname 
+          instance void  .ctor() cil managed
+  {
+    // Code size       7 (0x7)
+    .maxstack  8
+    IL_0000:  ldarg.0
+    IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
+    IL_0006:  ret
+  } // end of method Class1::.ctor
+
+} // end of class TestIldasm.Class1
+
+
+// =============================================================
 
 // *********** DISASSEMBLY COMPLETE ***********************
