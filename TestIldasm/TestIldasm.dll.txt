@@ -35,23 +35,23 @@
   .custom instance void [mscorlib]System.Runtime.InteropServices.GuidAttribute::.ctor(string) = ( 01 00 24 39 38 30 33 39 33 39 65 2D 31 61 63 32   // ..$9803939e-1ac2
                                                                                                   2D 34 37 63 64 2D 62 63 64 61 2D 31 65 63 62 38   // -47cd-bcda-1ecb8
                                                                                                   35 61 35 33 32 30 36 00 00 )                      // 5a53206..
-  .custom instance void [mscorlib]System.Reflection.AssemblyFileVersionAttribute::.ctor(string) = ( 01 00 07 31 2E 30 2E 30 2E 30 00 00 )             // ...1.0.0.0..
+  .custom instance void [mscorlib]System.Reflection.AssemblyFileVersionAttribute::.ctor(string) = ( 01 00 07 31 2E 30 2E 31 2E 30 00 00 )             // ...1.0.1.0..
   .custom instance void [mscorlib]System.Runtime.Versioning.TargetFrameworkAttribute::.ctor(string) = ( 01 00 1C 2E 4E 45 54 46 72 61 6D 65 77 6F 72 6B   // ....NETFramework
                                                                                                         2C 56 65 72 73 69 6F 6E 3D 76 34 2E 36 2E 31 01   // ,Version=v4.6.1.
                                                                                                         00 54 0E 14 46 72 61 6D 65 77 6F 72 6B 44 69 73   // .T..FrameworkDis
                                                                                                         70 6C 61 79 4E 61 6D 65 14 2E 4E 45 54 20 46 72   // playName..NET Fr
                                                                                                         61 6D 65 77 6F 72 6B 20 34 2E 36 2E 31 )          // amework 4.6.1
   .hash algorithm 0x00008004
-  .ver 1:0:0:0
+  .ver 1:0:1:0
 }
 .module TestIldasm.dll
-// MVID: {2A6F5BB0-EEDE-4F2F-81ED-D7F0AA0DF232}
+// MVID: {C75E0B8F-7CBB-4AEC-B293-F5D045415AC1}
 .imagebase 0x10000000
 .file alignment 0x00000200
 .stackreserve 0x00100000
 .subsystem 0x0003       // WINDOWS_CUI
 .corflags 0x00000001    //  ILONLY
-// Image base: 0x02C90000
+// Image base: 0x02FA0000
 
 
 // =============== CLASS MEMBERS DECLARATION ===================
