@@ -8,5 +8,8 @@ namespace TestIldasm
 {
     public class Class1
     {
+        private readonly int _n = 7;
+
+        public int WhatIsN() { return _n;  }
     }
 }
