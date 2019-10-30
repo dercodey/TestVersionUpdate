@@ -1,15 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TestIldasm
 {
-    public class Class1
+    [DataContract]
+    public class Class2
     {
-        private readonly int _m = 7;
-
-        public int WhatIsN() { return _m;  }
+        [DataMember]
+        public string MyName { get; set; }
     }
 }
