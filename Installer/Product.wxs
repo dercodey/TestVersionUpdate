@@ -24,18 +24,24 @@
   <Fragment>
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
-        <Directory Id="DerekCo" Name="Installer">
-          <Component Id="HedgehogService">
-            <File Id="HedgehogService.dll" Name="HedgehogService.dll" Source="..\HedgehogService\bin\Debug\HedgehogService.dll" KeyPath="yes"  />
-            <File Id="HedgehogService_CommonLibrary.dll" Name="CommonLibrary.dll" Source="..\HedgehogService\bin\Debug\CommonLibrary.dll" />
-          </Component>
-          <Component Id="MonkeyService">
-            <File Id="MonkeyService.dll" Name="MonkeyService.dll" Source="..\MonkeyService\bin\Debug\MonkeyService.dll" KeyPath="yes" />
-            <!--<File Id="MonkeyService_CommonLibrary.dll" Name="CommonLibrary.dll" Source="..\CommonLibrary\bin\Debug\CommonLibrary.dll" />-->
-          </Component>
-          <Component Id="ShellUI">
-            <File Id="ShellUI.dll" Name="ShellUI.dll" Source="..\ShellUI\bin\Debug\ShellUI.exe"  KeyPath="yes" />
-          </Component>
+        <Directory Id="DerekCo" Name="DerekCo">
+          <Directory Id="HedgehogService" Name="HedgehogService">
+            <Component Id="HedgehogService" Guid="1DA5E6F3-D62D-417F-9869-56BC5266171B">
+              <File Id="HedgehogService.dll" Name="HedgehogService.dll" Source="..\HedgehogService\bin\Debug\HedgehogService.dll" KeyPath="yes"  />
+              <File Id="HedgehogService_CommonLibrary.dll" Name="CommonLibrary.dll" Source="..\HedgehogService\bin\Debug\CommonLibrary.dll" />
+            </Component>
+          </Directory>
+          <Directory Id="MonkeyService" Name="MonkeyService">
+            <Component Id="MonkeyService" Guid="82FE875B-1AAF-436F-8AE2-6DC81DFC269F">
+              <File Id="MonkeyService.dll" Name="MonkeyService.dll" Source="..\MonkeyService\bin\Debug\MonkeyService.dll" KeyPath="yes" />
+              <File Id="MonkeyService_CommonLibrary.dll" Name="CommonLibrary.dll" Source="..\MonkeyService\bin\Debug\CommonLibrary.dll" />
+            </Component>
+          </Directory>
+          <Directory Id="DerekCo_ShellUI" Name="ShellUI">
+            <Component Id="ShellUI">
+              <File Id="ShellUI.dll" Name="ShellUI.exe" Source="..\ShellUI\bin\Debug\ShellUI.exe"  KeyPath="yes" />
+            </Component>
+          </Directory>
         </Directory>
       </Directory>
     </Directory>

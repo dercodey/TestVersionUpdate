@@ -50,13 +50,13 @@
   .ver 1:0:1:0
 }
 .module TestIldasm.dll
-// MVID: {24FC4621-261F-4C93-B04F-DFA84C18123D}
+// MVID: {E6ECD237-0E90-4383-9740-8A7D3C13FD36}
 .imagebase 0x10000000
 .file alignment 0x00000200
 .stackreserve 0x00100000
 .subsystem 0x0003       // WINDOWS_CUI
 .corflags 0x00000001    //  ILONLY
-// Image base: 0x028E0000
+// Image base: 0x00FD0000
 
 
 // =============== CLASS MEMBERS DECLARATION ===================

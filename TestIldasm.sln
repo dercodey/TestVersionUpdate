@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIldasm", "TestIldasm\TestIldasm.csproj", "{9803939E-1AC2-47CD-BCDA-1ECB85A53206}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractHashCalc", "ContractHashCalc\ContractHashCalc.csproj", "{06D4F5B3-8E28-4C39-A6CD-B674A941855B}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repos", "Repos", "{A71CC35B-4A94-4FA1-8D3A-45FF778713F6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CommonLibrary", "CommonLibrary", "{864A583F-126A-46A3-A7A7-4AD7B190E7EE}"
@@ -47,22 +43,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Debug|x86.Build.0 = Debug|Any CPU
-		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Release|x86.ActiveCfg = Release|Any CPU
-		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Release|x86.Build.0 = Release|Any CPU
-		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Debug|x86.Build.0 = Debug|Any CPU
-		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Release|x86.ActiveCfg = Release|Any CPU
-		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Release|x86.Build.0 = Release|Any CPU
 		{9760E6E0-E251-4173-B59F-B0CFF340C7BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9760E6E0-E251-4173-B59F-B0CFF340C7BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9760E6E0-E251-4173-B59F-B0CFF340C7BA}.Debug|x86.ActiveCfg = Debug|Any CPU
