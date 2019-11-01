@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestIldasm", "TestIldasm\TestIldasm.csproj", "{9803939E-1AC2-47CD-BCDA-1ECB85A53206}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContractHashCalc", "ContractHashCalc\ContractHashCalc.csproj", "{06D4F5B3-8E28-4C39-A6CD-B674A941855B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9803939E-1AC2-47CD-BCDA-1ECB85A53206}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D4F5B3-8E28-4C39-A6CD-B674A941855B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
