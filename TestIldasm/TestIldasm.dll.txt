@@ -26,7 +26,7 @@
                                                                                                              63 65 70 74 69 6F 6E 54 68 72 6F 77 73 01 )       // ceptionThrows.
 
   // --- The following custom attribute is added automatically, do not uncomment -------
-  //  .custom instance void [mscorlib]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [mscorlib]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 02 00 00 00 00 00 ) 
+  //  .custom instance void [mscorlib]System.Diagnostics.DebuggableAttribute::.ctor(valuetype [mscorlib]System.Diagnostics.DebuggableAttribute/DebuggingModes) = ( 01 00 07 01 00 00 00 00 ) 
 
   .custom instance void [mscorlib]System.Reflection.AssemblyTitleAttribute::.ctor(string) = ( 01 00 0A 54 65 73 74 49 6C 64 61 73 6D 00 00 )    // ...TestIldasm..
   .custom instance void [mscorlib]System.Reflection.AssemblyDescriptionAttribute::.ctor(string) = ( 01 00 00 00 00 ) 
@@ -50,13 +50,13 @@
   .ver 1:0:1:0
 }
 .module TestIldasm.dll
-// MVID: {6324B90B-F778-4A9C-9E40-820BE1CFA4FB}
+// MVID: {24FC4621-261F-4C93-B04F-DFA84C18123D}
 .imagebase 0x10000000
 .file alignment 0x00000200
 .stackreserve 0x00100000
 .subsystem 0x0003       // WINDOWS_CUI
 .corflags 0x00000001    //  ILONLY
-// Image base: 0x01930000
+// Image base: 0x01050000
 
 
 // =============== CLASS MEMBERS DECLARATION ===================
@@ -67,24 +67,31 @@
   .method public hidebysig instance int32 
           WhatIsN() cil managed
   {
-    // Code size       7 (0x7)
-    .maxstack  8
-    IL_0000:  ldarg.0
-    IL_0001:  ldfld      int32 TestIldasm.Class1::_m
-    IL_0006:  ret
+    // Code size       12 (0xc)
+    .maxstack  1
+    .locals init ([0] int32 V_0)
+    IL_0000:  nop
+    IL_0001:  ldarg.0
+    IL_0002:  ldfld      int32 TestIldasm.Class1::_m
+    IL_0007:  stloc.0
+    IL_0008:  br.s       IL_000a
+
+    IL_000a:  ldloc.0
+    IL_000b:  ret
   } // end of method Class1::WhatIsN
 
   .method public hidebysig specialname rtspecialname 
           instance void  .ctor() cil managed
   {
-    // Code size       14 (0xe)
+    // Code size       15 (0xf)
     .maxstack  8
     IL_0000:  ldarg.0
     IL_0001:  ldc.i4.7
     IL_0002:  stfld      int32 TestIldasm.Class1::_m
     IL_0007:  ldarg.0
     IL_0008:  call       instance void [mscorlib]System.Object::.ctor()
-    IL_000d:  ret
+    IL_000d:  nop
+    IL_000e:  ret
   } // end of method Class1::.ctor
 
 } // end of class TestIldasm.Class1
@@ -119,11 +126,12 @@
   .method public hidebysig specialname rtspecialname 
           instance void  .ctor() cil managed
   {
-    // Code size       7 (0x7)
+    // Code size       8 (0x8)
     .maxstack  8
     IL_0000:  ldarg.0
     IL_0001:  call       instance void [mscorlib]System.Object::.ctor()
-    IL_0006:  ret
+    IL_0006:  nop
+    IL_0007:  ret
   } // end of method Class2::.ctor
 
   .property instance string MyName()
@@ -138,4 +146,5 @@
 // =============================================================
 
 .custom (UNKNOWN_OWNER) instance void [mscorlib]System.Runtime.CompilerServices.CompilerGeneratedAttribute::.ctor() = ( 01 00 00 00 ) 
+.custom (UNKNOWN_OWNER) instance void [mscorlib]System.Diagnostics.DebuggerBrowsableAttribute::.ctor(valuetype [mscorlib]System.Diagnostics.DebuggerBrowsableState) = ( 01 00 00 00 00 00 00 00 ) 
 // *********** DISASSEMBLY COMPLETE ***********************
