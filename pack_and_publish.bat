@@ -2,7 +2,7 @@ echo off
 if not exist %1.nuspec goto NoNuspecFile
 
 set OriginalPackageVersion=
-for /f "usebackq tokens=2" %%v in (`nuget list %1 -source c:\nuget_feed`) do set OriginalPackageVersion=%%v
+for /f "usebackq tokens=2" %%v in (`nuget list %1 -source %LOCALNUGET%`) do set OriginalPackageVersion=%%v
 echo OriginalPackageVersion for %1 = %OriginalPackageVersion%
 
 set PackageMajor=&& set PackageMinor=&& set PackageBuildNumber=
@@ -13,7 +13,7 @@ del %1.*.nupkg
 nuget pack %1.nuspec -properties version=%Major%.%Minor%.%BuildNumber%
 
 echo Publishing %1
-for %%n in (%1.*.nupkg) do nuget add %%n -source c:\nuget_feed
+for %%n in (%1.*.nupkg) do nuget add %%n -source %LOCALNUGET%
 exit /B
 
 :NoNuspecFile
