@@ -34,8 +34,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonServiceLibrary, Version=1.0.7247.24553, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\CommonServiceLibrary.1.3.16\lib\net461\CommonServiceLibrary.dll</HintPath>
+    <Reference Include="CommonServiceLibrary, Version=1.0.7247.25455, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLibrary.1.0.2\lib\net461\CommonServiceLibrary.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -52,9 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HedgehogService.Contract\HedgehogService.Contract.csproj">
