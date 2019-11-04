@@ -47,7 +47,6 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IHedgehogService1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
   </ItemGroup>
@@ -61,6 +60,12 @@
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\nugetexample.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HedgehogService.Contract\HedgehogService.Contract.csproj">
+      <Project>{C4B78F2E-5A4A-4FC0-8F1A-8CAE38CC1081}</Project>
+      <Name>HedgehogService.Contract</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
