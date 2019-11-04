@@ -18,6 +18,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonServiceLibrary", "CommonLibrary\CommonServiceLibrary.csproj", "{9760E6E0-E251-4173-B59F-B0CFF340C7BA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HedgehogService", "HedgehogService\HedgehogService.csproj", "{BD7FEAE7-C718-4459-83A4-21405ABFA0DD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9760E6E0-E251-4173-B59F-B0CFF340C7BA} = {9760E6E0-E251-4173-B59F-B0CFF340C7BA}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CEF7F40D-4C1D-4212-B92A-878D3AEDADE9}"
 	ProjectSection(SolutionItems) = preProject
@@ -35,6 +38,10 @@ Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "Installer", "Installer\Inst
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonkeyService", "MonkeyService\MonkeyService.csproj", "{0B7FF6C6-DACA-4709-83EA-1E198F138F93}"
+	ProjectSection(ProjectDependencies) = postProject
+		{AC6E5F0D-6C21-4179-800C-7E3CFF7F73AF} = {AC6E5F0D-6C21-4179-800C-7E3CFF7F73AF}
+		{9760E6E0-E251-4173-B59F-B0CFF340C7BA} = {9760E6E0-E251-4173-B59F-B0CFF340C7BA}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellUI", "ShellUI\ShellUI.csproj", "{19EDF379-290E-4F76-8040-FBE4F33A0F3A}"
 EndProject
