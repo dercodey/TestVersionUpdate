@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.757
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HedgehogService", "HedgehogService\HedgehogService.csproj", "{BD7FEAE7-C718-4459-83A4-21405ABFA0DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HedgehogService.Contract", "HedgehogService.Contract\HedgehogService.Contract.csproj", "{C4B78F2E-5A4A-4FC0-8F1A-8CAE38CC1081}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{528DA11B-2FE9-46B9-AA8C-ED7CD180604B}"
+	ProjectSection(SolutionItems) = preProject
+		HedgehogService.Contract.nuspec = HedgehogService.Contract.nuspec
+		pack_and_publish.bat = pack_and_publish.bat
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BD7FEAE7-C718-4459-83A4-21405ABFA0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD7FEAE7-C718-4459-83A4-21405ABFA0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD7FEAE7-C718-4459-83A4-21405ABFA0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD7FEAE7-C718-4459-83A4-21405ABFA0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4B78F2E-5A4A-4FC0-8F1A-8CAE38CC1081}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4B78F2E-5A4A-4FC0-8F1A-8CAE38CC1081}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4B78F2E-5A4A-4FC0-8F1A-8CAE38CC1081}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4B78F2E-5A4A-4FC0-8F1A-8CAE38CC1081}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
