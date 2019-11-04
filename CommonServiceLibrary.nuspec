@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>CommonLibrary</id>
-    <version>1.1.0</version>
+    <id>CommonServiceLibrary</id>
+    <version>1.2.0</version>
     <authors>local_dev</authors>
     <owners>local_dev</owners>
     <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
@@ -11,7 +11,7 @@
     <description>Package description</description>
     <releaseNotes>
     Il-digests:
-    - CommonLibrary.dll: jdskdfjskdfjlsafnuewfniwfonwonfwoefno
+    - CommonServiceLibrary.dll: abcdefgabcdefgcdefgabcdefg
     </releaseNotes>
     <copyright>Copyright 2019</copyright>
     <tags>library</tags>

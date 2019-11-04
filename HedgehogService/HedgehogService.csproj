@@ -53,13 +53,6 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="Scripts\jquery-2.1.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\jquery-2.1.1.intellisense.js" />
-    <Content Include="Scripts\jquery-2.1.1.js" />
-    <Content Include="Scripts\jquery-2.1.1.min.js" />
-    <Content Include="Scripts\nugetexample.js" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HedgehogService.Contract\HedgehogService.Contract.csproj">
