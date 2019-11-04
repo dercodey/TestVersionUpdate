@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CommonServiceLibrary</id>
+    <version>$version$</version>
+    <authors>local_dev</authors>
+    <owners>local_dev</owners>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package description</description>
+    <releaseNotes>
+    Il-digests:
+    - CommonServiceLibrary.dll: abcdefgabcdefgcdefgabcdefg
+    </releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>library</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <!-- A readme.txt to display when the package is installed -->
+  <files>
+      <file src="./CommonLibrary/bin/Debug/CommonServiceLibrary.dll" target="lib\net461" />
+  </files>  
+</package>

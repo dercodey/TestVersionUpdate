@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>MonkeyService.Contract</id>
+    <version>$version$</version>
+    <authors>local_dev</authors>
+    <owners>local_dev</owners>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package description</description>
+    <releaseNotes>
+      Il-digests:
+      - MonkeyService.Contract.dll: abcdefgabcdefgcdefgabcdefg
+    </releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>contract</tags>
+    <dependencies>
+    </dependencies>
+  </metadata>
+  <!-- A readme.txt to display when the package is installed -->
+  <files>
+      <file src="./MonkeyService.Contract/bin/Debug/MonkeyService.Contract.dll" target="lib\net461" />
+  </files>  
+</package>
