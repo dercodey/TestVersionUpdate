@@ -44,4 +44,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>cd $(SolutionDir)
+pack_and_publish.bat CommonServiceLibrary</PostBuildEvent>
+  </PropertyGroup>
 </Project>
