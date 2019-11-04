@@ -13,8 +13,9 @@ namespace HedgehogService
     {
         public string GetData(int value)
         {
-            CommonLibrary.Class1 foo = new CommonLibrary.Class1();
-            return string.Format("You entered: {0}", value);
+            var msg = string.Format("You entered: {0}", value); 
+            var capMsg = CommonServiceLibrary.ServiceUtils.Capitalize(msg);
+            return capMsg;
         }
 
         public CompositeType GetDataUsingDataContract(CompositeType composite)
