@@ -39,14 +39,20 @@
             <Component Id="MonkeyService" Guid="82FE875B-1AAF-436F-8AE2-6DC81DFC269F">
               <File Id="MonkeyService.dll" Name="MonkeyService.dll" 
                     Source="..\MonkeyService\bin\Debug\MonkeyService.dll" />
+              <File Id="MonkeyService_MonkeyService.Contract.dll" Name="MonkeyService.Contract.dll"
+                    Source="..\MonkeyService\bin\Debug\MonkeyService.Contract.dll" />
               <File Id="MonkeyService_CommonServiceLibrary.dll" Name="CommonServiceLibrary.dll" 
                     Source="..\MonkeyService\bin\Debug\CommonServiceLibrary.dll" />
             </Component>
           </Directory>
           <Directory Id="DerekCo_ShellUI" Name="ShellUI">
-            <Component Id="ShellUI">
-              <File Id="ShellUI.dll" Name="ShellUI.exe" 
+            <Component Id="ShellUI" Guid="513C89DC-26A6-48D7-8FFB-53A7F54F4840">
+              <File Id="ShellUI.dll" Name="ShellUI.exe"
                     Source="..\ShellUI\bin\Debug\ShellUI.exe" />
+              <File Id="ShellUI_HedgehogService.Contract.dll" Name="HedgehogService.Contract.dll"
+                    Source="..\ShellUI\bin\Debug\MonkeyService.Contract.dll" />
+              <File Id="ShellUI_MonkeyService.Contract.dll" Name="MonkeyService.Contract.dll"
+                    Source="..\ShellUI\bin\Debug\MonkeyService.Contract.dll" />
             </Component>
           </Directory>
         </Directory>
