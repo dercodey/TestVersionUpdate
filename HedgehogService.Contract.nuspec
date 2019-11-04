@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>CommonServiceLibrary</id>
+    <id>HedgehogService.Contract</id>
     <version>$version$</version>
     <authors>local_dev</authors>
     <owners>local_dev</owners>
@@ -10,8 +10,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Package description</description>
     <releaseNotes>
-    Il-digests:
-    - CommonServiceLibrary.dll: abcdefgabcdefgcdefgabcdefg
+      Il-digests:
+      - HedgehogService.Contract.dll: abcdefgabcdefgcdefgabcdefg
     </releaseNotes>
     <copyright>Copyright 2019</copyright>
     <tags>library</tags>
@@ -20,6 +20,6 @@
   </metadata>
   <!-- A readme.txt to display when the package is installed -->
   <files>
-      <file src="./CommonLibrary/bin/Debug/CommonServiceLibrary.dll" target="lib\net461" />
+      <file src="./HedgehogService.Contract/bin/Debug/HedgehogService.Contract.dll" target="lib\net461" />
   </files>  
 </package>
