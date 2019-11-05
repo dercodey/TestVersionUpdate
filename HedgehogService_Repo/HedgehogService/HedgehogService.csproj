@@ -35,8 +35,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CommonServiceLibrary, Version=1.0.7248.14863, Culture=neutral, PublicKeyToken=null">
-      <HintPath>c:\nuget-local\CommonServiceLibrary.1.0.7\lib\net461\CommonServiceLibrary.dll</HintPath>
+    <Reference Include="CommonServiceLibrary, Version=1.0.7248.15888, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\packages\CommonServiceLibrary.1.0.11\lib\net461\CommonServiceLibrary.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -81,7 +81,7 @@
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
-    <PreBuildEvent>nuget update $(SolutionDir)HedgehogService_Repo.sln -RepositoryPath %25LOCALNUGET%25</PreBuildEvent>
+    <PreBuildEvent>nuget update $(SolutionDir)HedgehogService.sln</PreBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

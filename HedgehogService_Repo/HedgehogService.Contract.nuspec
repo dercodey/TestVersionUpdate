@@ -5,10 +5,10 @@
     <version>$version$</version>
     <authors>local_dev</authors>
     <owners>local_dev</owners>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <projectUrl>http://example.com/SomeProject</projectUrl>
+    <iconUrl>http://example.com/SomeIcon</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Package description</description>
+    <description>This is the contract for the hedgehog service</description>
     <releaseNotes>
       Il-digests:
       - HedgehogService.Contract.dll: abcdefgabcdefgcdefgabcdefg

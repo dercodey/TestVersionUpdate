@@ -34,11 +34,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="HedgehogService.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>c:\nuget-local\HedgehogService.Contract.1.0.2\lib\net461\HedgehogService.Contract.dll</HintPath>
+      <HintPath>..\packages\HedgehogService.Contract.1.0.8\lib\net461\HedgehogService.Contract.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="MonkeyService.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>c:\nuget-local\MonkeyService.Contract.1.0.3\lib\net461\MonkeyService.Contract.dll</HintPath>
+      <HintPath>..\packages\MonkeyService.Contract.1.0.7\lib\net461\MonkeyService.Contract.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -61,6 +61,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>nuget update $(SolutionDir)ShellUI_Repo.sln -RepositoryPath %25LOCALNUGET%25</PreBuildEvent>
+    <PreBuildEvent>nuget update $(SolutionDir)ShellUI.sln</PreBuildEvent>
   </PropertyGroup>
 </Project>

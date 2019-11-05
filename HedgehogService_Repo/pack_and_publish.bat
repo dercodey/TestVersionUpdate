@@ -6,7 +6,7 @@ for /f "usebackq tokens=2" %%v in (`nuget list %1 -source %LOCALNUGET%`) do set 
 echo OriginalPackageVersion for %1 = %OriginalPackageVersion%
 
 set PackageMajor=&& set PackageMinor=&& set PackageBuildNumber=
-for /F "tokens=1,2,3 delims=." %%a in ("%OriginalPackageVersion%") do (set Major=%%a&& set Minor=%%b&& set /a BuildNumber=%%c+1)
+for /F "tokens=1,2,3 delims=." %%a in ("%OriginalPackageVersion%") do (set Major=%%a&& set /a Minor=%%b+1&& set BuildNumber=0)
 echo Packing %1 for version %Major%.%Minor%.%BuildNumber%
 
 del %1.*.nupkg
