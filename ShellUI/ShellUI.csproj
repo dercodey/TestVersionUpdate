@@ -33,11 +33,13 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="HedgehogService.Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\HedgehogService.Contract.1.0.0\lib\net461\HedgehogService.Contract.dll</HintPath>
+    <Reference Include="HedgehogService.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>c:\nuget-local\HedgehogService.Contract.1.0.2\lib\net461\HedgehogService.Contract.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="MonkeyService.Contract, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MonkeyService.Contract.1.0.0\lib\net461\MonkeyService.Contract.dll</HintPath>
+    <Reference Include="MonkeyService.Contract, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+      <HintPath>c:\nuget-local\MonkeyService.Contract.1.0.3\lib\net461\MonkeyService.Contract.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -58,4 +60,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>nuget update $(SolutionDir)ShellUI_Repo.sln -RepositoryPath %25LOCALNUGET%25</PreBuildEvent>
+  </PropertyGroup>
 </Project>
